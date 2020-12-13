@@ -17,15 +17,3 @@ The goal of this exercise is to allow a user to book a simple order from an orde
 
 ![](./tsinterview.gif)
 
-## Codebase Overview
-* The codebase here is potentially something that a junior / less experienced developer may have worked on. 
-* Refactoring is welcome - we will talk through any refactoring that you have made as part of reviewing the solution to the exercise.
-
-## Implementation Notes
-
-* The codebase is Typescript and React. Jest is used for tests.
-* State management is handled using a custom solution - there is no need to introduce redux or any other library as part of the solution.
-* The backend is stubbed out - there is no need to extend the stub service / implement a real backend
-
-## Constraints
-* No modifications to the current list of dependencies in `package.json` are permitted.
