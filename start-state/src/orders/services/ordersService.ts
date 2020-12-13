@@ -1,10 +1,23 @@
-export class OrdersService {
-    book(currencyPair: string, amount: string, onResultsReceivedCallback: (success: boolean) => void) {
+import { Trade, TRADE_STATUS, DEFAULT_CCY_PAIRS } from '../models';
+
+export const bookTrade = (trade: Trade) : Promise<TRADE_STATUS> => {
+    return new Promise(function(resolve, reject) {
         setTimeout(() => {
-                const bookingSuccess = amount === "1m";
-                onResultsReceivedCallback(bookingSuccess);
-            },
-            2000
-        )
-    }
-}
+            trade.amount === "1m" ? 
+                resolve(TRADE_STATUS.SUCCESS) :
+                reject(TRADE_STATUS.FAILED)
+        },
+        2000
+    )
+    });
+};
+
+export const getRefData = () : Promise<string[]> => {
+    return new Promise(function(resolve, reject) {
+        setTimeout(() => {
+            resolve(DEFAULT_CCY_PAIRS)
+        },
+        2000
+    )
+    });
+};
