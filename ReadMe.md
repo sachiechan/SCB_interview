@@ -15,5 +15,9 @@ The goal of this exercise is to allow a user to book a simple order from an orde
 1. If the booking succeeds, show a `Booking Success` message.
 1. If the booking fails, show a `Booking Failed` message, along with the error message.
 
-![](./tsinterview.gif)
+![](./Tile_Default.png)
+
+![](./Tile_Success.png)
+
+![](./Tile_Failed.png)
 
